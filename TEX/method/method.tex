@@ -1,0 +1,18 @@
+
+\subsection{Metropolis algorithm}\label{sec:metro}
+
+The metropolis algorithm only has a few steps. First, pick one site in the matrix of spins. This process need to be random. For that site, calculate the energy difference if the spin is flipped. Then the algorithm decide whether to flip the spin or not. This is decided based on the energy difference. If the difference is negative flip, then flip the spin. If not, then pick a random number between 0 and 1 and if this number is less then $e^{-\beta \Delta E}$ flip the spin. Else keep the spin. Finally update expectation values.
+
+
+\subsubsection{Precalculate}
+
+The energy difference is expressed as an exponential function. Exponential values are expensive to calculate. In two dimensions there is a finite number of energy differences. We can precalculated the exponentials. By calculating these in advance the program will run more efficient. It can be shown that the energy difference then is\cite{compphys}:
+
+\begin{align*}
+	\Delta E = 2J s_j \sum_{<k>} s_k
+\end{align*}
+
+
+%\subsection{Randomness}
+
+%\todo{REF hvilken random generater bruker vi.}

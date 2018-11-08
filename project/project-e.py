@@ -550,20 +550,3 @@ if __name__ == '__main__':
 		print("time used ",t1-t0)
 		print()
 
-	# test.making_x_y_z(noise_level=0.1)
-	# test.scikit()
-	# test.manually()
-	# test.manually_ridge(0.00001)
-	# test.scikit_lasso(0.00001)
-	# test.plot()
-	# test.testing_degree_and_lambda()
-	# test.benchmark_testing_noise_level()
-	
-	# test.get_errors()
-	# test.var()
-	
-	#HAPPY TIME, FUN TIME
-	# for x in range(1,6):
-	# 	print((18111/2)*x**4 - 90555*x**3 + (633885/2) * x**2 - 452773*x + 217331)
-	
-
